@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
     android:background="@color/white"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
     <TextView
@@ -25,17 +25,16 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_below="@+id/regular_clock_text"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_centerHorizontal="true" />
 
     <LinearLayout
         android:id="@+id/bc_hours_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/bc_seconds"
+        android:layout_centerHorizontal="true"
         android:layout_margin="1dp"
         android:gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
         android:orientation="horizontal">
 
         <include layout="@layout/lamp" />
@@ -52,9 +51,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/bc_hours_top"
+        android:layout_centerHorizontal="true"
         android:layout_margin="1dp"
         android:gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
         android:orientation="horizontal">
 
         <include layout="@layout/lamp" />
@@ -71,9 +70,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/bc_hours_bottom"
+        android:layout_centerHorizontal="true"
         android:layout_margin="1dp"
         android:gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
         android:orientation="horizontal">
 
         <include layout="@layout/lamp_minute_top" />
@@ -104,9 +103,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/bc_minutes_top"
+        android:layout_centerHorizontal="true"
         android:layout_margin="1dp"
         android:gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
         android:orientation="horizontal">
 
         <include layout="@layout/lamp" />
@@ -118,5 +117,11 @@
         <include layout="@layout/lamp" />
     </LinearLayout>
 
+    <View
+        android:layout_width="10dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/bc_minutes_bottom"
+        android:layout_centerHorizontal="true"
+        android:background="#a8b0b2" />
 
 </RelativeLayout>
