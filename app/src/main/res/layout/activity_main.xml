@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/regular_clock_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:textAppearance="?textAppearanceTitleLarge"
+        tools:text="11:59:12" />
+
+    <include
+        android:id="@+id/bc_seconds"
+        layout="@layout/lamp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/regular_clock_text"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/bc_hours_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bc_seconds"
+        android:layout_margin="1dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <include layout="@layout/lamp" />
+
+        <include layout="@layout/lamp" />
+
+        <include layout="@layout/lamp" />
+
+        <include layout="@layout/lamp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bc_hours_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bc_hours_top"
+        android:layout_margin="1dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <include layout="@layout/lamp" />
+
+        <include layout="@layout/lamp" />
+
+        <include layout="@layout/lamp" />
+
+        <include layout="@layout/lamp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bc_minutes_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bc_hours_bottom"
+        android:layout_margin="1dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <include layout="@layout/lamp_minute_top" />
+
+        <include layout="@layout/lamp_minute_top" />
+
+        <include layout="@layout/lamp_minute_top" />
+
+        <include layout="@layout/lamp_minute_top" />
+
+        <include layout="@layout/lamp_minute_top" />
+
+        <include layout="@layout/lamp_minute_top" />
+
+        <include layout="@layout/lamp_minute_top" />
+
+        <include layout="@layout/lamp_minute_top" />
+
+        <include layout="@layout/lamp_minute_top" />
+
+        <include layout="@layout/lamp_minute_top" />
+
+        <include layout="@layout/lamp_minute_top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bc_minutes_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bc_minutes_top"
+        android:layout_margin="1dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <include layout="@layout/lamp" />
+
+        <include layout="@layout/lamp" />
+
+        <include layout="@layout/lamp" />
+
+        <include layout="@layout/lamp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
