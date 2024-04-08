@@ -2,8 +2,8 @@
 <resources>
 
     <style name="lamp_rectangle">
-        <item name="android:layout_marginHorizontal">5dp</item>
-        <item name="marginHorizontal">5dp</item>
+        <item name="android:layout_marginHorizontal">3dp</item>
+        <item name="marginHorizontal">3dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">48dp</item>
