@@ -8,7 +8,7 @@
     android:layout_height="48dp"
     android:layout_margin="1dp"
     android:text="Hello World!"
-    tools:background="@color/black"
+    tools:background="@color/grey_off"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
